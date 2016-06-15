@@ -1,0 +1,85 @@
+{
+  "items": [{
+    "name": "gameboy advance",
+    "category": "video games",
+    "year": "2001",
+    "description": "Nintendo's follow-up to the incredibly popular gameboy color",
+    "rating": "*****",
+    "price": "$150",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Game-Boy-Advance-1stGen.png",
+    "condition": "like-new"
+  }, {
+    "name": "Troll-Clops",
+    "category": "dolls",
+    "year": "1992",
+    "description": "A troll that's a cyclops. No further explanation needed",
+    "rating": "***",
+    "price": "$50",
+    "image": "http://i.ebayimg.com/images/g/1PgAAOSw3xJVWMLJ/s-l300.jpg",
+    "condition": "mint"
+  }, {
+    "name": "Knex",
+    "category": "builders",
+    "year": "1992",
+    "description": "pop plastic pieces together to create monstrosities of physics and man",
+    "rating": "****",
+    "price": "$100",
+    "image": "http://www.knex.com/_img/shop/productpage/320/12575.jpg",
+    "condition": "used"
+  }, {
+    "name": "Pikachu Electric Toothbrush",
+    "category": "franchises",
+    "year": "2001",
+    "description": "An electric toothbrush with Pikachu on it",
+    "rating": "*",
+    "price": "$25",
+    "image": "https://s-media-cache-ak0.pinimg.com/736x/13/ab/34/13ab34081880efc6a374368416c9f235.jpg",
+    "condition": "gently-used"
+  }, {
+    "name": "Chewbacca Furby",
+    "category": "furbies",
+    "year": "1998",
+    "description": "An electric toy that resembles a Chewbacca from Star Wars",
+    "rating": "****",
+    "price": "$89",
+    "image": "http://www.hasbro.com/common/productimages/en_US/bc76fde750569047f599df72a98b6fcb/5119C49650569047F576452CDBFAE35C.jpg",
+    "condition": "mint"
+  }, {
+    "name": "Pikachu Electric Toothbrush",
+    "category": "beanie babies",
+    "year": "1993",
+    "description": "An Elvis edition beanie baby",
+    "rating": "**",
+    "price": "$215",
+    "image": "http://world.ty.com/images/tfi/3/9dd1046b1f3f68e2ca67c69a47f4b549_lg.gif",
+    "condition": "used"
+  }, {
+    "name": "Pet Rock",
+    "category": "miscellaneous",
+    "year": "1975",
+    "description": "A loving rock that you can have as a pet",
+    "rating": "*",
+    "price": "$17",
+    "image": "http://a.abcnews.com/images/Lifestyle/gty_pet_rock_150401_4x3_992.jpg",
+    "condition": "beat to shit"
+  }],
+  "categories": [{
+    "name": "video games"
+  }, {
+    "name": "dolls"
+  }, {
+    "name": "builders"
+  }, {
+    "name": "franchises"
+  }, {
+    "name": "furbies"
+  }, {
+    "name": "beanie babies"
+  }, {
+    "name": "miscellaneous"
+  }],
+  "user": [{
+    "name": "90sFads4Lyfe",
+    "cart": ""
+  }]
+}

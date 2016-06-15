@@ -1,7 +1,6 @@
-{{category.name}}
+<h2 class="item-header">{{category.name}}</h2>
 
 {{#each category.items as |item|}}
-  <img class="images" src='{{item.image}}'>{{item.name}}
-{{/each}}
 
-{{log category.items.length}}
+  <img class="images" src='{{item.image}}'>
+{{/each}}

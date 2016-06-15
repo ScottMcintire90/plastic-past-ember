@@ -9,15 +9,27 @@ export default Ember.Route.extend({
   },
     actions: {
     save(params) {
-      console.log(params);
-      console.log(params.Object.category.id);
+      console.log(params.category);
       var newItem = this.store.createRecord('item', params);
-      var newCategory = params.category.get(id);
-      category.get('item').addObject(newItem);
+      var category = params.category;
+      category.get('items').addObject(newItem);
       newItem.save().then(function() {
-        return newCategory.save();
+        return category.save();
       });
       this.transitionTo('admin');
+    },
+    delete(item) {
+      item.destroyRecord();
+      this.transitionTo('admin');
+    },
+    update(item, params) {
+      Object.keys(params).forEach(function(key) {
+       if(params[key]!==undefined) {
+         item.set(key,params[key]);
+       }
+     });
+     item.save();
+     this.transitionTo('admin');
     }
   }
 });

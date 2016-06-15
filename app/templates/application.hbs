@@ -1,3 +1,15 @@
-<h1 class="header">Plastic of the Past</h1>
-{{#link-to 'admin'}}Admin{{/link-to}}
+<header>
+  <div class="nav">
+    <div>
+      <h1 class="header">Plastic of the Past</h1>
+    </div>
+    <div class="right-float">
+      {{#link-to 'admin'}}Admin{{/link-to}} |
+      {{#link-to 'index'}}Home{{/link-to}}
+    </div>
+  </div>
+</header>
+<div class="row col-md-2 left">
+  {{partial 'navbar'}}
+</div>
   {{outlet}}

@@ -6,9 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('navbar');
-  this.route('category', {path: '/category/:category_id'});
   this.route('admin');
+  this.route('category', {path: '/category/:category_id'});
+  this.route('item', {path: '/item/:item_id'});
 });
 
 export default Router;

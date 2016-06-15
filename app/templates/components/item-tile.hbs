@@ -1,6 +1,8 @@
-<img class="images" src='{{item.image}}'>
-<br>
-{{item.name}} ${{item.price}}
+{{#link-to 'item' item.id}}
+  <img class="images" src='{{item.image}}'>
+  <br>
+  {{item.name}} ${{item.price}}
+{{/link-to}}
 <br>
 {{model.item.category}}, {{item.year}}
 <br>

@@ -1,1 +1,12 @@
-{{admin-add-stuff categories=model.categories save="save"}}
+<div class="block-it row">
+  <div class="col-md-6 add-form">
+    {{admin-add-stuff categories=model.categories save="save"}}
+  </div>
+  <div class="col-md-6 item-list">
+    <ul>
+      {{#each model.items as |item|}}
+        {{admin-controls item=item update="update" delete="delete"}}
+      {{/each}}
+    </ul>
+  </div>
+</div>

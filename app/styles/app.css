@@ -28,7 +28,23 @@ ul {
   list-style: none;
 }
 ul li {
-  margin: 50px;
-  margin-left: 10px;
+  margin-top: 40px;
   font-size: 20px;
+}
+.right-float {
+  float:right;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.adminPic {
+  height: 20px;
+}
+.adminPic:hover {
+  height: 100px;
+}
+.block-it {
+  display: inline-block;
+}
+.add-form {
+  display: block;
 }

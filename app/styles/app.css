@@ -1,26 +1,93 @@
+
+/** NavBar **/
+.right-float {
+  float:right;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.navbar {
+  height: 195vh;
+  background-color: white;
+  margin: 0px auto;
+  border: 2px solid black;
+}
+/**Index Page Styling**/
+.box-the-items {
+  height: 420px;
+  display: flex;
+  position: relative;
+  background-color: white;
+  margin: 20px;
+  border-color: black;
+  border: 10px solid;
+}
+.boxModel {
+  margin-left: 50px;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #e6ffff;
+}
+
+.tile-image {
+  padding: 0;
+}
+.tile-head {
+  text-align: center;
+}
+.item-link {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.tile-info {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+#tile-items {
+  font-size: 20px;
+}
+#tile-description {
+  font-size: 15px;
+}
+#tile-left {
+  float: left;
+  float: bottom;
+  margin-left: -20px;
+}
+#tile-right {
+  float: bottom;
+  float: right;
+  margin-left: 60px;
+}
+#tile-price {
+  font-size: 22px;
+}
+#bottom {
+  position: absolute;
+  bottom: 2px;
+  height: 30px;
+  display: inline;
+}
+.fixed-in {
+  position: absolute;
+  display: inline;
+}
+
+
 .images {
-  height: 200px;
+  height: 180px;
 }
 .header {
   text-align: center;
   font-size: 65px;
 }
 
-.boxModel {
- margin-left: 50px;
-  border: 1px solid black;
-  padding: 20px;
-  border-radius: 25px;
-  background-color: #e6ffff;
-
-}
 body {
   background-color: #00cccc;
   font-family: 'Walter Turncoat', cursive;
 }
-.left {
-  float: left;
-}
+
 .row {
   display: inline;
 }
@@ -31,11 +98,7 @@ ul li {
   margin-top: 40px;
   font-size: 20px;
 }
-.right-float {
-  float:right;
-  margin-right: 50px;
-  margin-bottom: 50px;
-}
+
 .adminPic {
   height: 20px;
 }

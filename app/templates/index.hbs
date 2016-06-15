@@ -1,0 +1,10 @@
+
+  <div class="row col-md-2 left">
+    {{partial 'navbar'}}
+  </div>
+
+  <div class="row col-md-8 boxModel">
+    {{#each model.items as |item|}}
+      {{item-tile item=item}}
+    {{/each}}
+  </div>

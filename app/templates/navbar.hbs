@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-side">
+    <ul>
+      {{#each model.categories as |category|}}
+        <li>{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</li>
+      {{/each}}
+    </ul>
+  </nav>
+
+</div>

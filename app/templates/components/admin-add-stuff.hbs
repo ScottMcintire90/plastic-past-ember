@@ -1,0 +1,53 @@
+<form>
+  <div class="form-group">
+    <label for="name">Name of Product</label>
+    {{input value=name id="name"}}
+  </div>
+  <div class="form-group">
+    <label for="category">Category</label>
+    {{#x-select value=category-select}}
+      {{#each categories as |category|}}
+        {{#x-option value=category}}
+          {{category.name}}
+        {{/x-option}}
+      {{/each}}
+    {{/x-select}}
+  </div>
+  <div class="form-group">
+    <label for="year">Year Made</label>
+    {{input value=year id="year"}}
+  </div>
+  <div class="form-group">
+    <label for="description">Description of Product</label>
+    {{textarea value=description id="description"}}
+  </div>
+  <div class="form-group">
+    <label for="rating">Rating</label>
+    {{#x-select value=rating}}
+      {{#x-option value="1"}}1 Star{{/x-option}}
+      {{#x-option value="2"}}2 Star{{/x-option}}
+      {{#x-option value="3"}}3 Star{{/x-option}}
+      {{#x-option value="4"}}4 Star{{/x-option}}
+      {{#x-option value="5"}}5 Star{{/x-option}}
+    {{/x-select}}
+  </div>
+  <div class="form-group">
+    <label for="name">Price Desired</label>
+    {{input value=price id="price"}}
+  </div>
+  <div class="form-group">
+    <label for="image">Picture of Product</label>
+    {{input value=image id="image"}}
+  </div>
+  <div class="form-group">
+    <label for="condition">Condition of Product</label>
+    {{#x-select value=condition}}
+      {{#x-option value="mint"}}Mint{{/x-option}}
+      {{#x-option value="like-new"}}Like-New{{/x-option}}
+      {{#x-option value="gently-used"}}Gently-Used{{/x-option}}
+      {{#x-option value="used"}}Used{{/x-option}}
+      {{#x-option value="beat"}}Beat-To-Shit{{/x-option}}
+    {{/x-select}}
+  </div>
+  <button class="btn btn-primary" {{action 'save'}}>Submit</button>
+</form>

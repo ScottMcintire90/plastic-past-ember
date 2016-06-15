@@ -5,6 +5,9 @@
   text-align: center;
   font-size: 65px;
 }
+.item-header {
+  text-align: center;
+}
 
 .boxModel {
  margin-left: 50px;
@@ -47,4 +50,8 @@ ul li {
 }
 .add-form {
   display: block;
+}
+
+.item-list {
+  text-align: center;
 }

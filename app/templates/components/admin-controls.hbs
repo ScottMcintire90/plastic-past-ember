@@ -1,5 +1,5 @@
-<li><img class="adminPic" src='{{item.image}}'> {{item.name}}
-<button class="btn btn-danger" {{action 'delete' item}}>Delete</button>
+<li><img class="adminPic" src='{{item.image}}'> {{item.name}}</li>
+<li><button class="btn btn-danger" {{action 'delete' item}}>Delete</button>
 <button class="btn btn-success" {{action 'updateItemForm'}}>Update</button></li>
 {{#if updateItemForm}}
   <form>

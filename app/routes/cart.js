@@ -7,7 +7,8 @@ export default Ember.Route.extend({
       equalTo: true
     });
   },
-  actions:{
+
+  actions: {
   remove(item) {
     item.set('cart', false);
     item.save();

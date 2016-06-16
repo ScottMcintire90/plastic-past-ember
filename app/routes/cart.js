@@ -6,5 +6,12 @@ export default Ember.Route.extend({
       orderBy: 'cart',
       equalTo: true
     });
+  },
+  actions:{
+  remove(item) {
+    item.set('cart', false);
+    item.save();
+    this.transitionTo('cart');
+    }
   }
 });

@@ -1,12 +1,10 @@
 {{#link-to 'item' item.id}}
-  <img class="images" src='{{item.image}}'>
-  <br>
-  {{item.name}} ${{item.price}}
+  <div class="container tile-container">
+    <ul class="img-list">
+      <li>
+        <img class="tile-images" src='{{item.image}}'>
+        <span class="text-tile"><span>{{item.name}} ${{item.price}}</span></span>
+      </li>
+    </ul>
+  </div>
 {{/link-to}}
-<br>
-{{model.item.category}}, {{item.year}}
-<br>
-{{item.description}}
-<br>
-{{item.condition}}{{item.rating}}
-<button class="btn-success" {{action ‘addToCart’ item}}>Add to Cart</button>

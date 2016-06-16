@@ -11,5 +11,5 @@ export default Model.extend({
   price: attr(),
   image: attr(),
   condition: attr(),
-  cart: attr()
+  cart: attr(),
 });

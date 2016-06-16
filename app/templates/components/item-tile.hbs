@@ -1,9 +1,11 @@
 {{#link-to 'item' item.id}}
-  <div class="container tile-container">
+  <div class="tile-container">
     <ul class="img-list">
       <li>
         <img class="tile-images" src='{{item.image}}'>
-        <span class="text-tile"><span>{{item.name}} ${{item.price}}</span></span>
+        <div class="v-align">
+          <span class="text-tile"><span>{{item.name}} ${{item.price}}</span></span>
+        </div>
       </li>
     </ul>
   </div>

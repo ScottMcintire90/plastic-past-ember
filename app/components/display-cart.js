@@ -5,7 +5,6 @@ export default Ember.Component.extend({
     var prices = 0;
     var items = this.get('items');
     items.forEach(function(item) {
-      console.log(item.get('price'));
       prices += parseInt(item.get('price'));
     });
     return prices;

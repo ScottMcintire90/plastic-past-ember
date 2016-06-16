@@ -1,7 +1,9 @@
-{{category.name}}
-
-{{#each category.items as |item|}}
-  <img class="images" src='{{item.image}}'>{{item.name}}
-{{/each}}
-
+<p id="category-header">{{category.name}}</p>
+<div class="row">
+  {{#each category.items as |item|}}
+    <div class="col-sm-3 categories">
+      <img id="category-images" src='{{item.image}}'>{{item.name}}
+    </div>
+  {{/each}}
+</div>
 {{log category.items.length}}

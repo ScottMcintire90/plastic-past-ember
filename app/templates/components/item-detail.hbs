@@ -1,3 +1,20 @@
-{{item.name}}
-<img class="images" src='{{item.image}}'>
-<button {{action 'addToCart' item}}>Add to Cart</button>
+<div class="row">
+  <div class="col-md-6">
+    <div id="detail-title"><p>{{item.name}}</p></div>
+
+    <div id="detail-image">
+      <img id="image-detail" src='{{item.image}}'>
+    </div>
+  </div>
+
+  <div class="col-md-5" id="detail-box">
+    <div id="description-detail">
+      <p>Description:
+        {{item.description}}
+      </p>
+      <p>Item's Condition: {{item.condition}}</p>
+      <p>${{item.price}}</p>
+    </div>
+    <button id="add-cart" {{action 'addToCart' item}}>Add to Cart</button>
+  </div>
+</div>

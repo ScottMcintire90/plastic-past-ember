@@ -1,31 +1,10 @@
 {{#link-to 'item' item.id}}
-  <div class="tile-head">
-    <img class="images tile-image" src='{{item.image}}'>
-    <br>
-    <span class="item-link">
-      {{item.name}}
-    </span>
-
-    <span id="tile-price">${{item.price}}</span>
+  <div class="container tile-container">
+    <ul class="img-list">
+      <li>
+        <img class="tile-images" src='{{item.image}}'>
+        <span class="text-tile"><span>{{item.name}} ${{item.price}}</span></span>
+      </li>
+    </ul>
   </div>
 {{/link-to}}
-<div class="tile-info">
-  <div class="container-fluid">
-    <span id="tile-items">From the Year: {{item.year}}</span>
-  </div>
-
-  <div class="container-fluid">
-    <span id="tile-description">
-      About: {{item.description}}
-    </span>
-  </div>
-</div>
-
-<div class="container-fluid" id="bottom">
-  <div id="tile-left">
-    Item Condition: {{item.condition}}
-  </div>
-  <div id="tile-right">
-    <p>Rated: {{item.rating}}</p>
-  </div>
-</div>

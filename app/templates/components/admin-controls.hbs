@@ -1,58 +1,60 @@
-<li><img class="adminPic" src='{{item.image}}'> {{item.name}}
-<button class="btn btn-danger" {{action 'delete' item}}>Delete</button>
-<button class="btn btn-success" {{action 'updateItemForm'}}>Update</button></li>
-{{#if updateItemForm}}
-  <form>
-    <div class="form-group">
-      <label for="name">Name of Product</label>
-      {{input value=name placeholder=item.name id="name"}}
-    </div>
-    <div class="form-group">
-      <label for="category">Category</label>
-      {{#x-select value=category-select}}
-        {{#each categories as |category|}}
-          {{#x-option value=category}}
-            {{category.name}}
-          {{/x-option}}
-        {{/each}}
-      {{/x-select}}
-    </div>
-    <div class="form-group">
-      <label for="year">Year Made</label>
-      {{input value=year placeholder=item.year id="year"}}
-    </div>
-    <div class="form-group">
-      <label for="description">Description of Product</label>
-      {{textarea value=description placeholder=item.description id="description"}}
-    </div>
-    <div class="form-group">
-      <label for="rating">Rating</label>
-      {{#x-select value=rating}}
-        {{#x-option value="1"}}1 Star{{/x-option}}
-        {{#x-option value="2"}}2 Star{{/x-option}}
-        {{#x-option value="3"}}3 Star{{/x-option}}
-        {{#x-option value="4"}}4 Star{{/x-option}}
-        {{#x-option value="5"}}5 Star{{/x-option}}
-      {{/x-select}}
-    </div>
-    <div class="form-group">
-      <label for="name">Price Desired</label>
-      {{input value=price placeholder=item.price id="price"}}
-    </div>
-    <div class="form-group">
-      <label for="image">Picture of Product</label>
-      {{input value=image placeholder=item.image id="image"}}
-    </div>
-    <div class="form-group">
-      <label for="condition">Condition of Product</label>
-      {{#x-select value=condition}}
-        {{#x-option value="mint"}}Mint{{/x-option}}
-        {{#x-option value="like-new"}}Like-New{{/x-option}}
-        {{#x-option value="gently-used"}}Gently-Used{{/x-option}}
-        {{#x-option value="used"}}Used{{/x-option}}
-        {{#x-option value="beat"}}Beat-To-Shit{{/x-option}}
-      {{/x-select}}
-    </div>
-    <button class="btn btn-primary" {{action 'update' item}}>Submit</button>
-  </form>
-{{/if}}
+<div class="admin-list">
+  <li><img class="adminPic" src='{{item.image}}'> {{item.name}}
+  <button class="btn btn-danger" {{action 'delete' item}}>Delete</button>
+  <button class="btn btn-success" {{action 'updateItemForm'}}>Update</button></li>
+  {{#if updateItemForm}}
+    <form>
+      <div class="form-group">
+        <label for="name">Name of Product</label>
+        {{input value=name placeholder=item.name id="name"}}
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        {{#x-select value=category-select}}
+          {{#each categories as |category|}}
+            {{#x-option value=category}}
+              {{category.name}}
+            {{/x-option}}
+          {{/each}}
+        {{/x-select}}
+      </div>
+      <div class="form-group">
+        <label for="year">Year Made</label>
+        {{input value=year placeholder=item.year id="year"}}
+      </div>
+      <div class="form-group">
+        <label for="description">Description of Product</label>
+        {{textarea value=description placeholder=item.description id="description"}}
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        {{#x-select value=rating}}
+          {{#x-option value="1"}}1 Star{{/x-option}}
+          {{#x-option value="2"}}2 Star{{/x-option}}
+          {{#x-option value="3"}}3 Star{{/x-option}}
+          {{#x-option value="4"}}4 Star{{/x-option}}
+          {{#x-option value="5"}}5 Star{{/x-option}}
+        {{/x-select}}
+      </div>
+      <div class="form-group">
+        <label for="name">Price Desired</label>
+        {{input value=price placeholder=item.price id="price"}}
+      </div>
+      <div class="form-group">
+        <label for="image">Picture of Product</label>
+        {{input value=image placeholder=item.image id="image"}}
+      </div>
+      <div class="form-group">
+        <label for="condition">Condition of Product</label>
+        {{#x-select value=condition}}
+          {{#x-option value="mint"}}Mint{{/x-option}}
+          {{#x-option value="like-new"}}Like-New{{/x-option}}
+          {{#x-option value="gently-used"}}Gently-Used{{/x-option}}
+          {{#x-option value="used"}}Used{{/x-option}}
+          {{#x-option value="beat"}}Beat-To-Shit{{/x-option}}
+        {{/x-select}}
+      </div>
+      <button class="btn btn-primary" {{action 'update' item}}>Submit</button>
+    </form>
+  {{/if}}
+</div>

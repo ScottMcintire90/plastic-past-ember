@@ -1,5 +1,19 @@
+body {
+  background-color: #00cccc;
+  font-family: 'Walter Turncoat', cursive;
+}
+.images {
+  height: 180px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: black;
+}
 
-/** NavBar **/
+
+/** NavBar-Side **/
 .right-float {
   float:right;
   margin-right: 50px;
@@ -11,94 +25,105 @@
   margin: 0px auto;
   border: 2px solid black;
 }
-/**Index Page Styling**/
-.box-the-items {
-  height: 420px;
-  display: flex;
-  position: relative;
-  background-color: white;
-  margin: 20px;
-  border-color: black;
-  border: 10px solid;
+#navbar-title {
+  width: 100%;
 }
-.boxModel {
-  margin-left: 50px;
-  border: 2px solid black;
-  padding: 20px;
-  border-radius: 25px;
-  background-color: #e6ffff;
-}
-
-.tile-image {
-  padding: 0;
-}
-.tile-head {
-  text-align: center;
-}
-.item-link {
-  margin-left: 30px;
-  text-decoration: none;
-  font-size: 25px;
-}
-.tile-info {
+#margin-left {
   margin-left: 10px;
+}
+ul#navbar-list {
+  font-size: 18px;
+}
+.nav-list {
   margin-top: 20px;
-}
-#tile-items {
-  font-size: 20px;
-}
-#tile-description {
-  font-size: 15px;
-}
-#tile-left {
-  float: left;
-  float: bottom;
   margin-left: -20px;
 }
-#tile-right {
-  float: bottom;
-  float: right;
-  margin-left: 60px;
-}
-#tile-price {
-  font-size: 22px;
-}
-#bottom {
-  position: absolute;
-  bottom: 2px;
-  height: 30px;
-  display: inline;
-}
-.fixed-in {
-  position: absolute;
-  display: inline;
+.left {
+  margin-top: -1%;
+  margin-left: -2%;
 }
 
-
-.images {
-  height: 180px;
+/**NavBar-Top**/
+.navbar-top {
+  background-color: white;
+  margin-bottom: 20px;
+  border: 2px black solid;
+  border-radius: 5px;
+  height: 150px;
 }
 .header {
   text-align: center;
   font-size: 65px;
 }
 
-body {
-  background-color: #00cccc;
-  font-family: 'Walter Turncoat', cursive;
+
+/**Index Page Styling**/
+.tile-container {
+  height: 175px;
+  width: 175px;
+  position: relative;
+  margin: 30px;
+}
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul.img-list li {
+  display: inline-block;
+  height: 175px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 175px;
+}
+span.text-tile {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 175px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 175px;
+  opacity: 0;
+  font-size: 22px;
+
+ -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+span.text-tile span {
+  display: inline-table;
+  text-align: center;
+}
+ul.img-list li:hover span.text-tile {
+  opacity: 1;
 }
 
-.row {
-  display: inline;
-}
-ul {
-  list-style: none;
-}
-ul li {
-  margin-top: 40px;
-  font-size: 20px;
+
+.tile-images {
+  height: 175px;
+  width: 175px;
 }
 
+.boxModel {
+  margin-left: 100px;
+  height: 195vh;
+  margin-top: -1%;
+  margin-left: 5%;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #e6ffff;
+}
+.item-link {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 25px;
+}
 .adminPic {
   height: 20px;
 }
@@ -110,4 +135,35 @@ ul li {
 }
 .add-form {
   display: block;
+}
+
+/**Admin Page**/
+.add-bubble {
+  background-color: white;
+  margin: 2%;
+  height: 900px;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+label {
+  margin: 5px;
+  font-size: 18px;
+}
+textarea {
+  height: 200px;
+  width: 350px;
+  padding: 0;
+  margin: 0;
+}
+input {
+  width: 100%;
+}
+
+/**Admin-List**/
+.admin-list {
+    height: 200px;
+    width: 500px;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 5px;
 }

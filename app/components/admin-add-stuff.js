@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         price: this.get('price'),
         image: this.get('image'),
         condition: this.get('condition'),
+        cart: false
       };
         this.set('name', "");
         this.set('year', "");
